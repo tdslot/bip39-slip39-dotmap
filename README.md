@@ -43,6 +43,9 @@ This table divides the 12 points into three columns for readability.
 
 ### BIP39 Reversed Examples
 
+Each word is represented by 12 dots, corresponding to the values:
+1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048
+
 *   `#63 amazing = 1 + 2 + 4 + 8 + 16 + 32`
     `| ●●●● | ○○●● | ○○○○ |`
 *   `#977 key = 1 + 16 + 64 + 128 + 256 + 512`
@@ -87,6 +90,9 @@ This table divides the 12 points into three columns for readability.
 [Full SLIP39 Dot Pattern Mapping Table (Reversed)](slip39-dot-pattern-mapping-reversed.md)
 
 ### SLIP39 Reversed Examples
+
+Each word is represented by 12 dots, corresponding to the values:
+1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048
 
 *   `#1 academic = 1`
     `| ●○○○ | ○○○○ | ○○○○ |`
