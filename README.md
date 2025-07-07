@@ -43,9 +43,9 @@ This table divides the 12 points into three columns for readability.
 
 ### BIP39 Reversed Examples
 
-*   `#63 amazing = 1, 2, 4, 8, 16, 32`
+*   `#63 amazing = 1 + 2 + 4 + 8 + 16 + 32`
     `| ●●●● | ○○●● | ○○○○ |`
-*   `#977 key = 1, 16, 64, 128, 256, 512`
+*   `#977 key = 1 + 16 + 64 + 128 + 256 + 512`
     `| ○○○● | ●●○● | ○○●● |`
 
 ## SLIP39 Dot Pattern Mapping
@@ -90,8 +90,14 @@ This table divides the 12 points into three columns for readability.
 
 *   `#1 academic = 1`
     `| ●○○○ | ○○○○ | ○○○○ |`
+*   `#3 acne = 1 + 2`
+    `| ●●○○ | ○○○○ | ○○○○ |`
+*   `#374 friendly = 2 + 4 + 16 + 32 + 64 + 256`
+    `| ○●●○ | ●●●○ | ●○○○ |`
+*   `#628 orange = 4 + 16 + 32 + 64 + 512`
+    `| ○○●○ | ●●●○ | ○●○○ |`
 *   `#1024 zero = 1024`
-    `| ○●○○ | ○○○○ | ○○○○ |`
+    `| ○○○○ | ○○○○ | ○○●○ |`
 
 ---
 *Based on documentation from [Yoseyomo SLIP39 Word List](https://www.yoseyomo.com/en/pages/slip39-word-list), [Yoseyomo BIP39 Word List](https://www.yoseyomo.com/en/pages/bip39-word-list) and [OneKeyHQ/bip39-dotmap](https://github.com/OneKeyHQ/bip39-dotmap).*
