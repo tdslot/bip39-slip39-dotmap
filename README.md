@@ -1,6 +1,9 @@
 # Mnemonic Dot Pattern Mapping
 
 This repository provides tools and documentation for mapping BIP39 and SLIP39 mnemonic phrases to visual dot patterns. This can be useful for physical backups of your recovery phrases.
+### Reversed Mapping Explanation
+
+Yoseyomo designed their system so that binary numbers are read intuitively, from left to right, starting with the smallest values (1, 2, 4, 8, 16, ...), making it user-friendly. This "reversed" variant, available for both BIP39 and SLIP39, simplifies practical implementation, even though it varies slightly from the technical standard.
 
 ## BIP39 Dot Pattern Mapping
 
@@ -36,10 +39,8 @@ For instance:
     `| ○○●● | ●●●○ | ○●○● |`
 
 This table divides the 12 points into three columns for readability.
-
-[Full BIP39 Dot Pattern Mapping Table](bip39-dot-pattern-mapping.md)
-
-[Full BIP39 Dot Pattern Mapping Table (Reversed)](bip39-dot-pattern-mapping-reversed.md)
+    - [Full BIP39 Dot Pattern Mapping Table](bip39-dot-pattern-mapping.md)
+    - [Full BIP39 Dot Pattern Mapping Table (Reversed)](bip39-dot-pattern-mapping-reversed.md)
 
 ### BIP39 Reversed Examples
 
@@ -84,10 +85,8 @@ For instance:
     `| ○○○● | ●●●● | ○○○● |`
 
 This table divides the 12 points into three columns for readability.
-
-[Full SLIP39 Dot Pattern Mapping Table](slip39-dot-pattern-mapping.md)
-
-[Full SLIP39 Dot Pattern Mapping Table (Reversed)](slip39-dot-pattern-mapping-reversed.md)
+    - [Full SLIP39 Dot Pattern Mapping Table](slip39-dot-pattern-mapping.md)
+    - [Full SLIP39 Dot Pattern Mapping Table (Reversed)](slip39-dot-pattern-mapping-reversed.md)
 
 ### SLIP39 Reversed Examples
 
