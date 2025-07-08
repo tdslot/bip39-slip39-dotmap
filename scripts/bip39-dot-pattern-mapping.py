@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import urllib.request
-import subprocess
-from collections import defaultdict
+import os
 
 # Fetch official BIP39 wordlist
 url = 'https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt'
@@ -38,5 +37,6 @@ for entry in data:
 md_content = '# BIP39 Dot Pattern Mapping\n\n' + header + '\n'.join(rows)
 
 # Save to file
-with open('bip39-dot-pattern-mapping.md', 'w') as f:
+output_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'bip39-dot-pattern-mapping.md')
+with open(output_file_path, 'w') as f:
     f.write(md_content)

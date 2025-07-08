@@ -1,20 +1,19 @@
 #!/usr/bin/python3
 import urllib.request
-import subprocess
-from collections import defaultdict
+import os
 
-# Fetch official BIP39 wordlist
-url = 'https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt'
+# Fetch official SLIP39 wordlist
+url = 'https://raw.githubusercontent.com/satoshilabs/slips/master/slip-0039/wordlist.txt'
 with urllib.request.urlopen(url) as response:
     wordlist = [word.strip() for word in response.read().decode().splitlines()]
 
-# Generate the data: for each word, we have index and the three column patterns
+# Generate the data: for each word, we have index and the two column patterns
 data = []
 for i, word in enumerate(wordlist):
     index = i + 1
-    # Convert index to 12-bit binary string
+    # Convert index to 12-bit binary string (1-1024, padded with leading zeros)
     bin_str = bin(index)[2:].zfill(12)
-    # Split into three 4-bit groups
+    # Split into three 4-bit groups and reverse bits within each group
     col1_bin = bin_str[8:12][::-1]
     col2_bin = bin_str[4:8][::-1]
     col3_bin = bin_str[0:4][::-1]
@@ -35,8 +34,9 @@ for entry in data:
     index, word, _, _, _, col1, col2, col3 = entry
     rows.append(f"| {index:7} | {word:10} | {col1:^7} | {col2:^12} | {col3:^17} |")
 
-md_content = '# BIP39 Dot Pattern Mapping\n\n' + header + '\n'.join(rows)
+md_content = '# SLIP39 Dot Pattern Mapping (Reversed)\n\n' + header + '\n'.join(rows)
 
 # Save to file
-with open('bip39-dot-pattern-mapping-reversed.md', 'w') as f:
+output_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'slip39-dot-pattern-mapping-reversed.md')
+with open(output_file_path, 'w') as f:
     f.write(md_content)
