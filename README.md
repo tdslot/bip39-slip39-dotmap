@@ -105,4 +105,7 @@ Each word is represented by 12 dots, corresponding to the values:
     `| ○○○○ | ○○○○ | ○○●○ |`
 
 ---
-*Based on documentation from [Yoseyomo SLIP39 Word List](https://www.yoseyomo.com/en/pages/slip39-word-list), [Yoseyomo BIP39 Word List](https://www.yoseyomo.com/en/pages/bip39-word-list) and [OneKeyHQ/bip39-dotmap](https://github.com/OneKeyHQ/bip39-dotmap).*
+*Based on documentation from 
+- [Yoseyomo SLIP39 Word List](https://www.yoseyomo.com/en/pages/slip39-word-list), 
+- [Yoseyomo BIP39 Word List](https://www.yoseyomo.com/en/pages/bip39-word-list) and 
+- [OneKeyHQ/bip39-dotmap](https://github.com/OneKeyHQ/bip39-dotmap).*
