@@ -39,8 +39,8 @@ For instance:
     `| ○○●● | ●●●○ | ○●○● |`
 
 This table divides the 12 points into three columns for readability.
-    - [Full BIP39 Dot Pattern Mapping Table](bip39-dot-pattern-mapping.md)
-    - [Full BIP39 Dot Pattern Mapping Table (Reversed)](bip39-dot-pattern-mapping-reversed.md)
+- [Full BIP39 Dot Pattern Mapping Table](bip39-dot-pattern-mapping.md)
+- [Full BIP39 Dot Pattern Mapping Table (Reversed)](bip39-dot-pattern-mapping-reversed.md)
 
 ### BIP39 Reversed Examples
 
@@ -85,8 +85,8 @@ For instance:
     `| ○○○● | ●●●● | ○○○● |`
 
 This table divides the 12 points into three columns for readability.
-    - [Full SLIP39 Dot Pattern Mapping Table](slip39-dot-pattern-mapping.md)
-    - [Full SLIP39 Dot Pattern Mapping Table (Reversed)](slip39-dot-pattern-mapping-reversed.md)
+- [Full SLIP39 Dot Pattern Mapping Table](slip39-dot-pattern-mapping.md)
+- [Full SLIP39 Dot Pattern Mapping Table (Reversed)](slip39-dot-pattern-mapping-reversed.md)
 
 ### SLIP39 Reversed Examples
 
