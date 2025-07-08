@@ -1,10 +1,12 @@
+#!/usr/bin/python3
+import urllib.request
 import subprocess
 from collections import defaultdict
 
 # Fetch official BIP39 wordlist
 url = 'https://raw.githubusercontent.com/bitcoin/bips/master/bip-0039/english.txt'
-response = subprocess.check_output(['curl', '-s', url])
-wordlist = [word.strip() for word in response.decode().splitlines()]
+with urllib.request.urlopen(url) as response:
+    wordlist = [word.strip() for word in response.read().decode().splitlines()]
 
 # Generate the data: for each word, we have index and the three column patterns
 data = []
