@@ -45,13 +45,13 @@ Each word is represented by 12 dots, corresponding to the values:
 
 For instance:
 
-*   `#63 amazing = 32, 16, 8, 4, 2, 1`
+*   `#63 amazing = 32 + 16 + 8 + 4 + 2 + 1`
     `| ○○○○ | ○○●● | ●●●● |`
 *   `#977 key = 512 + 256 + 128 + 64 + 16 + 1`
     `| ○○●● | ●●○● | ○○○● |`
-*   `#996 ladder = 16 + 8 + 4 + 2 + 1`
+*   `#996 ladder = 512 + 256 + 128 + 64 + 32 + 4`
     `| ○○●● | ●●●○ | ○●○○ |`
-*   `#997 lady = 16 + 8 + 4 + 2 + 1`
+*   `#997 lady = 512 + 256 + 128 + 64 + 32 + 4 + 1`
     `| ○○●● | ●●●○ | ○●○● |`
 
 This table divides the 12 points into three columns for readability.
@@ -64,9 +64,11 @@ Each word is represented by 12 dots, corresponding to the values:
 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048
 
 *   `#63 amazing = 1 + 2 + 4 + 8 + 16 + 32`
-    `| ●●●● | ○○●● | ○○○○ |`
+    `| ●●●● | ●●○○ | ○○○○ |`
 *   `#977 key = 1 + 16 + 64 + 128 + 256 + 512`
-    `| ○○○● | ●●○● | ○○●● |`
+    `| ●○○○ | ●○●● | ●●○○ |`
+*   `#1267 oxygen = 1 + 2 + 16 + 32 + 64 + 128 + 1024`
+    `| ●●○○ | ●●●● | ○○●○ |`
 
 ## SLIP39 Dot Pattern Mapping
 
