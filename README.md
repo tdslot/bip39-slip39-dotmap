@@ -54,7 +54,15 @@ Each word is represented by 12 dots, corresponding to the values:
 
 ## SLIP39 Dot Pattern Mapping
 
-SLIP39 is an advanced standard using Shamir's Secret Sharing to divide recovery phrases into multiple fragments (shares) for enhanced security.
+SLIP39 is an advanced standard using Shamir's Secret Sharing to divide recovery phrases into multiple fragments (shares) for enhanced security. Unlike BIP39, which generates a single recovery phrase, SLIP39 allows for the creation of a "master secret" that can be split into multiple unique shares. This provides a more robust and flexible backup solution.
+
+### Key Differences from BIP39 and Advantages of SLIP39:
+
+*   **Shamir's Secret Sharing (SSS):** The primary distinction is SLIP39's integration of SSS. This cryptographic scheme allows a secret to be divided into a number of unique parts (shares), such that a predetermined number of those parts (the threshold) are required to reconstruct the original secret. BIP39 does not offer this functionality.
+*   **Enhanced Security:** With SSS, even if some shares are lost or compromised, the master secret remains secure as long as the threshold number of shares is not met. This significantly reduces the risk of single points of failure compared to BIP39, where the compromise of a single recovery phrase means the loss of funds.
+*   **Flexible Recovery:** SLIP39 enables users to define custom recovery policies. For example, you can create 5 shares and require any 3 of them to recover the secret (a 3-of-5 scheme). This flexibility is crucial for managing inheritance, multi-signature setups, or distributing risk among trusted individuals.
+*   **Resilience to Loss:** Losing one or more shares does not necessarily mean losing access to your funds, as long as the minimum threshold of shares is still available. This adds a layer of fault tolerance.
+*   **Multiple Recovery Options:** Users can create different sets of shares for various scenarios, such as a personal set and a family set, each with its own threshold.
 
 ### How SLIP39 Works (Example: Word Index 308)
 
