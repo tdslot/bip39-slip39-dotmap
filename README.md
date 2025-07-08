@@ -1,3 +1,19 @@
+# BIP39 / SLIP39 Seed Phrase Dot Map
+
+This is dot maps for physical backups of BIP39 and SLIP39 seed phrases, ideal for crypto security and cold storage.
+
+## 🔐 What is this?
+
+This repository lets you convert your mnemonic phrases into dot map representations (QR-like) to allow:
+
+- Physical backup using laser engraving or printing
+- Visualization of **BIP39** and **SLIP39** words
+- Usage in **wallet recovery** and offline storage
+
+## 🎯 Keywords
+
+BIP39, SLIP39, mnemonic, seed phrase, dot map, crypto cold storage, printable seed, secure backup, physical crypto backup, airgap recovery
+
 # Mnemonic Dot Pattern Mapping
 
 This repository provides tools and documentation for mapping BIP39 and SLIP39 mnemonic phrases to visual dot patterns. This can be useful for physical backups of your recovery phrases.
@@ -113,7 +129,10 @@ Each word is represented by 12 dots, corresponding to the values:
     `| ○○○○ | ○○○○ | ○○●○ |`
 
 ---
-*Based on documentation:
+## 🔗 Related Projects
+
+- [SLIP-0039 at Trezor](https://github.com/trezor/slips/blob/master/slip-0039.md)
+- [BIP39 spec](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 - [Yoseyomo SLIP39 Word List](https://www.yoseyomo.com/en/pages/slip39-word-list)
 - [Yoseyomo BIP39 Word List](https://www.yoseyomo.com/en/pages/bip39-word-list)
 - [OneKeyHQ/bip39-dotmap](https://github.com/OneKeyHQ/bip39-dotmap)
