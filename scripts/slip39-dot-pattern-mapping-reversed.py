@@ -27,7 +27,7 @@ for i, word in enumerate(wordlist):
 
 # Generate markdown table in the correct format
 header = "| Index   | Word       | 1 2 4 8 | 16 32 64 128 | 256 512 1024 2048 |\n"
-header += "|---------|------------|---------|--------------|-------------------|\n"
+header += "|:-------:|:-----------|:-------:|:------------:|:-----------------:|\n"
 
 rows = []
 for entry in data:
