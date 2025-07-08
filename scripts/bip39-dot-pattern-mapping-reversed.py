@@ -34,7 +34,7 @@ for entry in data:
     index, word, _, _, _, col1, col2, col3 = entry
     rows.append(f"| {index:7} | {word:10} | {col1:^7} | {col2:^12} | {col3:^17} |")
 
-md_content = '# BIP39 Dot Pattern Mapping\n\n' + header + '\n'.join(rows)
+md_content = '# BIP39 Dot Pattern Mapping (Reversed)\n\n' + header + '\n'.join(rows)
 
 # Save to file
 output_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'bip39-dot-pattern-mapping-reversed.md')

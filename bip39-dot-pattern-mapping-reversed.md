@@ -1,4 +1,4 @@
-# BIP39 Dot Pattern Mapping
+# BIP39 Dot Pattern Mapping (Reversed)
 
 | Index   | Word       | 1 2 4 8 | 16 32 64 128 | 256 512 1024 2048 |
 |:-------:|:-----------|:-------:|:------------:|:-----------------:|
