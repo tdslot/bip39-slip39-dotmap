@@ -138,3 +138,4 @@ Each word is represented by 12 dots, corresponding to the values:
 - [Yoseyomo SLIP39 Word List](https://www.yoseyomo.com/en/pages/slip39-word-list)
 - [Yoseyomo BIP39 Word List](https://www.yoseyomo.com/en/pages/bip39-word-list)
 - [OneKeyHQ/bip39-dotmap](https://github.com/OneKeyHQ/bip39-dotmap)
+- [OneKey: Recovery Phrase Converter](https://bip39.onekey.so/)
