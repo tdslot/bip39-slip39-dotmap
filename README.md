@@ -133,7 +133,7 @@ Each word is represented by 12 dots, corresponding to the values:
 ---
 ## 🔗 Related Projects
 
-- [SLIP-0039 at Trezor](https://github.com/trezor/slips/blob/master/slip-0039.md)
+- [SLIP-0039 at SatoshiLabs](https://github.com/satoshilabs/slips/blob/master/slip-0039.md)
 - [BIP39 spec](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 - [Yoseyomo SLIP39 Word List](https://www.yoseyomo.com/en/pages/slip39-word-list)
 - [Yoseyomo BIP39 Word List](https://www.yoseyomo.com/en/pages/bip39-word-list)
